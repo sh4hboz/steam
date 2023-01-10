@@ -332,6 +332,7 @@ main .payment form label .form-check-input{
   padding: 0;
   border-color: #7668CA;
   margin-right: 10px;
+  margin-top: 0;
 }
 main .payment form label .form-check-input:checked {
   background-color: #332D4F;
@@ -696,9 +697,8 @@ footer .author {
 }
 /* SUCCESSFULPAY */
 main.successful_pay{
-  min-height: calc(100vh - 248px);
+  min-height: calc(100vh - 65px);
   display: flex;  
-  padding: 290px 0;
 }
 main.successful_pay .container{
   display: flex;
@@ -892,9 +892,6 @@ main.faq .accordion .accordion-item .accordion-body{
     font-size: 27px;
     line-height: 37px;
   }
-  main.indexthree .payment{
-    padding: 140px 0 100px 0;
-  }
   main.indexthree .payment .check_login{
     top: 54px;
   }
@@ -902,7 +899,7 @@ main.faq .accordion .accordion-item .accordion-body{
     max-width: none;
   }
   main .payment form label .form-check-input {
-    width: 20px;
+    width: 15px;
   }
   main.index .payment form label .checkmark::after {
     top: 18px;
@@ -1087,6 +1084,7 @@ main.faq .accordion .accordion-item .accordion-body{
   }
   main.indexthree .payment{
     flex-direction: column;
+    min-height: calc(100vh + 190px);
   }
   main.indexthree .payment .login_input {
     width: 60%;
@@ -1146,7 +1144,7 @@ main.faq .accordion .accordion-item .accordion-body{
   }
   footer .footer_row {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
   main .payment form .login{
     max-width: 60%;
@@ -1265,9 +1263,6 @@ main.faq .accordion .accordion-item .accordion-body{
   main.indexthree .payment .cards_block img{
     width: 76px;
     height: 30px;
-  }
-  main.indexthree .payment {
-    padding: 45px 0 100px 0;
   }
   main.indexthree .payment .amount{
     width: 100%;
