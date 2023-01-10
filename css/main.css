@@ -742,6 +742,7 @@ main.successful_pay .review{
 }
 footer.successful_pay .footer_row{
   justify-content: space-around;
+  border-top: 1px solid #7668CA;
 }
 
 /* FAQ */
@@ -889,7 +890,10 @@ main.faq .accordion .accordion-item .accordion-body{
   main .payment form label .form-check-input {
     width: 20px;
   }
-  main .payment form label .checkmark::after {
+  main.index .payment form label .checkmark::after {
+    top: 18px;
+  }
+  main.indextwo .payment form label .checkmark::after {
     top: 18px;
   }
   main .payment form label{
@@ -923,12 +927,23 @@ main.faq .accordion .accordion-item .accordion-body{
     max-width: none;
     width: 100%;
   }
+  main.successful_pay{
+    padding: 200px 0;
+  }
+  main.indexthree .payment form label .checkmark::after{
+    top: 8px;
+    left: 7px;
+  }
 }
 @media only screen and (max-width: 768px) {
   header .header_row .header_logo{
     justify-content: space-between;
   }
   main .payment form label .checkmark::after {
+    top: 33px;
+    left: 7px;
+  }
+  main.indexthree .payment form label .checkmark::after {
     top: 33px;
     left: 7px;
   }
@@ -1019,6 +1034,7 @@ main.faq .accordion .accordion-item .accordion-body{
   footer.successful_pay .footer_row{
     background: none;
     box-shadow: none;
+    border: none;
   }
   footer .footer_row{
     justify-content: center;
@@ -1091,6 +1107,15 @@ main.faq .accordion .accordion-item .accordion-body{
   }
   main.successful_pay .container{
     align-items: center;
+  }
+  main.successful_pay{
+    padding: 100px 0;
+  }
+  main.successful_pay .review{
+    text-align: center;
+  }
+  main.successful_pay .section_description{
+    text-align: center;
   }
 }
 @media only screen and (max-width: 576px) {
