@@ -11,19 +11,16 @@ body {
   font-size: 12px;
   line-height: 14px;
   color: #FEFEFE;
-  /* background: linear-gradient(180deg, #242038 11.62%, rgba(36, 32, 56, 0.8) 47.54%, #242038 86.48%),url(../images/main_bg_1.png); */
-  /* background: linear-gradient(180deg, #242038 11.62%, rgba(36, 32, 56, 0.8) 47.54%, #242038 86.48%),url(../images/main_bg_2.png); */
-  background: linear-gradient(180deg, #242038 11.62%, rgb(36 32 56 / 75%) 47.54%, #242038 70.48%),url(../images/main_bg_3.png);
-  /* background: linear-gradient(180deg, #242038 11.62%, rgba(36, 32, 56, 0.8) 47.54%, #242038 86.48%),url(../images/main_bg_4.png); */
+  background-image: linear-gradient(180deg, #242038 11.62%, rgb(36 32 56 / 75%) 47.54%, #242038 70.48%),url(../images/main_bg_3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 body.successful_pay{
-  background: linear-gradient(180deg, #242038 11.62%, rgb(36 32 56 / 75%) 47.54%, #242038 70.48%),url(../images/main_bg_4.png);
+  background-image: linear-gradient(180deg, #242038 11.62%, rgb(36 32 56 / 75%) 47.54%, #242038 70.48%),url(../images/main_bg_4.png);
 }
 body.faq{
-  background: linear-gradient(180deg, #242038 11.62%, rgb(36 32 56 / 75%) 47.54%, #242038 70.48%),url(../images/main_bg_4.png);
+  background-image: linear-gradient(180deg, #242038 11.62%, rgb(36 32 56 / 75%) 47.54%, #242038 70.48%),url(../images/main_bg_4.png);
 }
 .wraper {
   overflow: hidden;
@@ -35,10 +32,19 @@ body.faq{
   padding: 0 10px;
 }
 
-header {
+header{
   background: #332D4F;
   box-shadow: 0px 5px 25px rgba(13, 20, 29, 0.15);
   padding: 15px 0;
+}
+header.indexthree{
+  background: #332D4F;
+  box-shadow: 0px 5px 25px rgba(13, 20, 29, 0.15);
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
 header.successful_pay{
   background: none;
@@ -263,10 +269,6 @@ main .payment form input.small, .login{
   max-width: 200px;
   width: 100%;
 }
-/* main.indextwo .payment form input.small, .login{
-  max-width: 145px;
-  width: 100%;
-} */
 main .payment form .login{
   text-decoration: none;
   font-size: 14px;
@@ -415,7 +417,15 @@ main.indexthree .payment{
   text-align: center;
   gap: 0;
   justify-content: center;
-  padding: 240px 0 110px 0;
+  min-height: calc(100vh + 65px);
+  align-items: center;
+  padding: 0;
+}
+main.indexthree .payment .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 main.indexthree .payment form{
   flex-wrap: nowrap;
@@ -1125,10 +1135,10 @@ main.faq .accordion .accordion-item .accordion-body{
 @media only screen and (max-width: 576px) {
   footer.successful_pay .footer_row{
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
   footer .footer_row .footer_links{
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
   }
   main.faq{
