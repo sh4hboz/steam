@@ -431,8 +431,9 @@ main.indexthree .payment .sale{
 }
 main.indexthree .payment form label{
   position: absolute;
-  right: -81%;
+  right: -82%;
   bottom: -24px;
+  padding: 0;
 }
 main.indexthree .payment .check_login{
   display: block;
@@ -871,7 +872,10 @@ main.faq .accordion .accordion-item .accordion-body{
   main.index .payment .payment_form .marked {
     max-width: 157px;
     width: 100%;
-}
+  }
+  main.indexthree .payment form label{
+    right: -79%;
+  }
 }
 @media only screen and (max-width: 992px){
   main .block_title {
@@ -1092,11 +1096,11 @@ main.faq .accordion .accordion-item .accordion-body{
     margin: 0;
   }
   main.indexthree .payment .check_login{
-    top: 19%;
+    top: 25%;
   }
   main.indexthree .payment form label {
     right: 0%;
-    bottom: 48px;
+    bottom: 56px;
   }
   main.index .payment .payment_form .marked {
     max-width: none;
