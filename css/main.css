@@ -1095,7 +1095,7 @@ footer.agreement{
     flex-direction: column-reverse;
   }
   main.policy{
-    padding-bottom: 50px;
+    padding-bottom: 200px;
   }
   main.indextwo .payment{
     flex-wrap: wrap;
@@ -1160,6 +1160,11 @@ footer.agreement{
     background: none;
     box-shadow: none;
     border: none;
+  }
+  footer.agreement .footer_row{
+    padding: 30px 0;
+    background: #242038;
+    box-shadow: 0px -5px 25px rgb(13 20 29 / 15%);
   }
   footer .footer_row{
     justify-content: center;
@@ -1394,6 +1399,9 @@ footer.agreement{
     max-width: 100%;
     font-size: 12px;
     line-height: 14px;
+  }
+  main.policy{
+    padding-bottom: 250px;
   }
 }
 @media only screen and (max-width: 515px) {
