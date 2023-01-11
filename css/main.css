@@ -80,7 +80,7 @@ header.indexthree.fixed .header_row{
   box-shadow: none;
   background: none;
   padding: 0;
-  justify-content: space-between;
+  justify-content: center;
 }
 header .header_row {
   display: flex;
@@ -404,7 +404,8 @@ main .payment form button:not([disabled]):hover ,button:active{
 }
 
 main .payment form button.disabled{
-  opacity: .7;
+  background: #332D4F;
+  border: 1px solid #7668CA;
 }
 main .streamers{
   padding-bottom: 90px;
@@ -924,10 +925,10 @@ footer.agreement{
     min-width: 1400px;
   }
   main.indextwo .payment form .login {
-    max-width: 188px;
+    max-width: 184px;
   }
   main.indextwo .payment form input.small, .login {
-    max-width: 188px;
+    max-width: 184px;
   }
   main.indextwo .payment form input.big {
     max-width: 423px ;
@@ -959,7 +960,7 @@ footer.agreement{
     max-width: 140px;
   }
   main.indextwo .payment form input.big {
-    max-width: 333px;
+    max-width: 331px;
   }
   main.index .payment .payment_form .marked {
     max-width: 157px;
@@ -1169,7 +1170,7 @@ footer.agreement{
   }
   main.indexthree .payment{
     flex-direction: column;
-    min-height: calc(100vh + 190px);
+    min-height: calc(100vh - 110px);
   }
   main.indexthree .payment .login_input {
     width: 60%;
