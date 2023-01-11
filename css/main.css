@@ -15,6 +15,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 body.successful_pay{
   background-image: linear-gradient(180deg, #242038 11.62%, rgb(36 32 56 / 75%) 47.54%, #242038 70.48%),url(../images/main_bg_4.png);
@@ -163,7 +164,7 @@ header.successful_pay .header_row .statistics::before {
   top: 0;
 }
 main.policy{
-  padding: 100px 0;
+  padding: 100px 0 200px 0;
 }
 main.indextwo .section_title{
   display: none;
@@ -876,6 +877,18 @@ main.policy .scroll-container-text .semibold{
 } 
 main.policy .scroll-container-text a{
   text-decoration: none;
+}
+header.agreement{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+footer.agreement{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
 }
 /* MEDIA */
 @media only screen and (max-width: 1400px) {
