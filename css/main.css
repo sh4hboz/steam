@@ -744,7 +744,7 @@ footer .author {
 }
 /* SUCCESSFULPAY */
 main.successful_pay{
-  min-height: calc(100vh - 65px);
+  min-height: calc(100vh - 221px);
   display: flex;  
 }
 main.successful_pay .container{
