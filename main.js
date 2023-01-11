@@ -28,4 +28,15 @@ $(document).ready(function(){
         }
 
     })
+
+    $(window).scroll(function (e) {
+        var y = $(this)[0].scrollY;
+        if (y > 70) {
+            $('header.indexthree').addClass('fixed');
+            $('body.indexthree').addClass('header_fixed')
+        } else {
+            $('header.indexthree').removeClass('fixed');
+            $('body.indexthree').removeClass('header_fixed')
+        }
+  });
 })

@@ -22,6 +22,9 @@ body.successful_pay{
 body.faq{
   background-image: linear-gradient(180deg, #242038 11.62%, rgb(36 32 56 / 75%) 47.54%, #242038 70.48%),url(../images/main_bg_4.png);
 }
+body.indexthree.header_fixed{
+  padding: 65px 0 0 0;
+}
 .wraper {
   overflow: hidden;
 }
@@ -38,14 +41,20 @@ header{
   padding: 15px 0;
 }
 header.indexthree{
+  background: inherit;
+  box-shadow: inherit;
+  padding: 15px 0;
+  transition: .5s all ease;
+}
+header.indexthree.fixed{
   background: #332D4F;
   box-shadow: 0px 5px 25px rgba(13, 20, 29, 0.15);
-  padding: 15px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 }
+
 header.successful_pay{
   background: none;
   box-shadow: none;
@@ -56,6 +65,21 @@ header.successful_pay .header_row{
   border-radius: 100px;
   padding: 20px 0;
   justify-content: space-around;
+}
+header.indexthree .header_row{
+  background: #332D4F;
+  box-shadow: 0px 5px 25px rgba(13, 20, 29, 0.15);
+  border-radius: 100px;
+  padding: 20px 0;
+  justify-content: space-around;
+  transition: .5s all ease;
+}
+header.indexthree.fixed .header_row{
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  padding: 0;
+  justify-content: space-between;
 }
 header .header_row {
   display: flex;
@@ -382,7 +406,8 @@ main .payment form button.disabled{
   opacity: .7;
 }
 main .streamers{
-  padding: 90px 0;
+  padding-bottom: 90px;
+  margin-top: -30px;
 }
 main .streamers .block_title{
   font-weight: 700;
@@ -427,7 +452,7 @@ main.indexthree .payment{
   text-align: center;
   gap: 0;
   justify-content: center;
-  min-height: calc(100vh + 65px);
+  min-height: calc(100vh - 200px);
   align-items: center;
   padding: 0;
 }
