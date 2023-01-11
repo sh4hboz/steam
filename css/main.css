@@ -138,6 +138,9 @@ header .header_row .statistics::before {
 header.successful_pay .header_row .statistics::before {
   top: 0;
 }
+main.policy{
+  padding: 100px 0;
+}
 main.indextwo .section_title{
   display: none;
 }
@@ -352,25 +355,31 @@ main .payment form label .checkmark::after{
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+main.indexthree .payment form label .checkmark::after{
+  top: 3px;
+}
+
 main .payment form label .form-check-input:checked ~ .checkmark:after {
   opacity: 1;
 }
 main .payment form button{
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 19px;
-  color: #939B9D;
-  background: #332D4F;
-  border: 1px solid #7668CA;
+  color: #FEFEFE;
+  background: #7668CA;
   border-radius: 15px;
   padding: 16px 20px;
   outline: none;
   height: 51px;
+  transition: .3s all ease;
 }
-main .payment form button:hover ,button:active{
-  color: #939B9D;
-  background: #332D4F;
-  border: 1px solid #7668CA;
+main .payment form button:not([disabled]):hover ,button:active{
+  box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+
+main .payment form button.disabled{
+  opacity: .7;
 }
 main .streamers{
   padding: 90px 0;
@@ -471,13 +480,10 @@ main.indexthree .payment button{
 }
 main.indexthree .payment .cards_block{
   display: flex;
-  align-items: center;
   padding-top: 60px;
 }
 main.indexthree .payment .cards_block img{
   object-fit: contain;
-  width: 98px;
-  height: 52px;
   padding: 0 10px;
   border-right: 1px solid #7668CA;
 }
@@ -527,13 +533,28 @@ footer .footer_row .footer_links a {
   line-height: 16px;
   text-decoration: none;
   color: #FEFEFE;
+  transition: .3s all ease;
+}
+footer .footer_row .footer_links a:hover {
+  color: #8274D7;
 }
 footer .footer_row .social_network {
   display: flex;
   gap: 20px;
 }
-footer .footer_row .social_network img {
+footer .footer_row .social_network svg {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  transition: .3s all ease;
+}
+footer .footer_row .social_network svg:hover{
+  scale: 1.1;
+}
+footer .footer_row .social_network svg:first-child:hover path{
+  fill: #0088cc;
+}
+footer .footer_row .social_network svg:last-child:hover path{
+  fill: #4C75A3;
 }
 footer .footer_row::after {
   position: absolute;
@@ -808,6 +829,29 @@ main.faq .accordion .accordion-item .accordion-body{
   color: #FFFFFF;
   padding: 25px 25px 0 75px;
 }
+/* POLICY */
+main.policy .scroll-container-title{
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 0 25px 0;
+  color: #FEFEFE;
+}
+main.policy .scroll-container-text{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #FEFEFE;
+  margin: 0;
+  padding: 0 0 30px 0;
+}
+main.policy .scroll-container-text .semibold{
+  font-weight: 600;
+  color: #7668ca;
+} 
+main.policy .scroll-container-text a{
+  text-decoration: none;
+}
 /* MEDIA */
 @media only screen and (max-width: 1400px) {
   main .payment form input.big {
@@ -893,7 +937,7 @@ main.faq .accordion .accordion-item .accordion-body{
     line-height: 37px;
   }
   main.indexthree .payment .check_login{
-    top: 54px;
+    bottom: 62px;
   }
   main .payment form input.small, .login{
     max-width: none;
@@ -942,8 +986,8 @@ main.faq .accordion .accordion-item .accordion-body{
     padding: 200px 0;
   }
   main.indexthree .payment form label .checkmark::after{
-    top: 8px;
-    left: 7px;
+    top: 6px;
+    left: 5px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -955,8 +999,8 @@ main.faq .accordion .accordion-item .accordion-body{
     left: 7px;
   }
   main.indexthree .payment form label .checkmark::after {
-    top: 33px;
-    left: 7px;
+    top: 6px;
+    left: 5px;
   }
   header .header_row .statistics{
     justify-content: space-between;
@@ -982,6 +1026,9 @@ main.faq .accordion .accordion-item .accordion-body{
   main .payment{
     flex-wrap: wrap;
     flex-direction: column-reverse;
+  }
+  main.policy{
+    padding-bottom: 50px;
   }
   main.indextwo .payment{
     flex-wrap: wrap;
@@ -1104,7 +1151,7 @@ main.faq .accordion .accordion-item .accordion-body{
     margin: 0;
   }
   main.indexthree .payment .check_login{
-    top: 25%;
+    bottom: 77%;
   }
   main.indexthree .payment form label {
     right: 0%;
@@ -1141,6 +1188,9 @@ main.faq .accordion .accordion-item .accordion-body{
   }
   main.faq{
     padding: 45px 0 45px;
+  }
+  main.policy{
+    padding-bottom: 20px;
   }
   footer .footer_row {
     flex-direction: column;
@@ -1275,6 +1325,8 @@ main.faq .accordion .accordion-item .accordion-body{
   main.indexthree .payment button{
     width: 100%;
     max-width: 100%;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 @media only screen and (max-width: 515px) {
