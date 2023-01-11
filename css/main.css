@@ -80,7 +80,7 @@ header.indexthree.fixed .header_row{
   box-shadow: none;
   background: none;
   padding: 0;
-  justify-content: center;
+  justify-content: space-between;
 }
 header .header_row {
   display: flex;
@@ -407,6 +407,11 @@ main .payment form button.disabled{
   background: #332D4F;
   border: 1px solid #7668CA;
 }
+
+main .payment form button.disabled:hover .errors_block{
+  opacity: 1;
+  visibility: visible;
+}
 main .streamers{
   padding-bottom: 90px;
   margin-top: -30px;
@@ -504,7 +509,30 @@ main.indexthree .payment .small{
 main.indexthree .payment button{
   margin-left: 30px;
   width: 337px;
+  position: relative;
 }
+
+main.indexthree .payment button .errors_block{
+  position: absolute;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  right: -15px;
+  bottom: 110%;
+  background-color: rgba(0,0,0,.6);
+  color: rgb(224, 83, 83);
+  min-width: 330px;
+  font-size: 11px;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s all ease;
+}
+
+main.indexthree .payment button .errors_block .error_item.hidden{
+  display: none;
+}
+
 main.indexthree .payment .cards_block{
   display: flex;
   padding-top: 60px;
@@ -925,10 +953,10 @@ footer.agreement{
     min-width: 1400px;
   }
   main.indextwo .payment form .login {
-    max-width: 184px;
+    max-width: 188px;
   }
   main.indextwo .payment form input.small, .login {
-    max-width: 184px;
+    max-width: 188px;
   }
   main.indextwo .payment form input.big {
     max-width: 423px ;
@@ -960,7 +988,7 @@ footer.agreement{
     max-width: 140px;
   }
   main.indextwo .payment form input.big {
-    max-width: 331px;
+    max-width: 333px;
   }
   main.index .payment .payment_form .marked {
     max-width: 157px;
@@ -1170,7 +1198,7 @@ footer.agreement{
   }
   main.indexthree .payment{
     flex-direction: column;
-    min-height: calc(100vh - 110px);
+    min-height: calc(100vh + 190px);
   }
   main.indexthree .payment .login_input {
     width: 60%;

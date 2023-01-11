@@ -43,8 +43,14 @@
                         <input class="big amount" type="text" placeholder="Минимальная сумма 100 ₽">
                         <input class="small" type="text" placeholder="Promo">                        
                         <label for="checkbox"><input type="checkbox" class="form-check-input" id="checkbox"><span class="checkmark"></span> <p>Я принимаю правила сервиса</p></label>
-                        <button type="button" class="disabled" disabled data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        
+                        <button type="button" class="disabled" disabled data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
                             ПОПОЛНИТЬ
+                            <span class="errors_block">
+                                <span class="error_item login_error">у Логина меньше 3 букв</span>
+                                <span class="error_item sum_error">Минимальная сумма должна быть выше 100 рублей</span>
+                                <span class="error_item checkbox_error">Нужно принять правила сервиса</span>
+                            </span>
                         </button>
                     </form>
                     <div class="cards_block">

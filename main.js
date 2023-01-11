@@ -27,6 +27,23 @@ $(document).ready(function(){
             form.find('button').addClass('disabled').attr('disabled',true);
         }
 
+        if(login.val().length >= 3){
+            $('.login_error').addClass('hidden')
+        }else{
+            $('.login_error').removeClass('hidden')
+        }
+
+        if(amount.val() >= 100){
+            $('.sum_error').addClass('hidden')
+        }else{
+            $('.sum_error').removeClass('hidden')
+        }
+
+        if(agreement.prop('checked')){
+            $('.checkbox_error').addClass('hidden')
+        }else{
+            $('.checkbox_error').removeClass('hidden')
+        }
     })
 
     $(window).scroll(function (e) {
@@ -38,5 +55,8 @@ $(document).ready(function(){
             $('header.indexthree').removeClass('fixed');
             $('body.indexthree').removeClass('header_fixed')
         }
-  });
+    });
+
+    const exampleEl = document.getElementById('fill_button')
+    const tooltip = new bootstrap.Tooltip(exampleEl, {})
 })
