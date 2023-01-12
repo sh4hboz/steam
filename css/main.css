@@ -47,7 +47,7 @@ header.indexthree{
   right: 0;
   margin: 0 auto;
   position: fixed;
-  transition: .3s position ease-in, .3s max-width ease-in-out .1s, .3s top ease-in-out, .3s border-radius linear .3s;
+  transition: .3s position ease-in, .3s max-width ease-in-out .1s, .3s top ease-in-out, .3s border-radius ease-in-out .3s;
   background: #332D4F;
   box-shadow: 0px 5px 25px rgba(13, 20, 29, 0.15);
   border-radius: 100px;
@@ -168,7 +168,7 @@ main.indextwo .form_title{
   width: 100%;
 }
 main.indextwo .payment{
-  padding-top: 120px;
+  padding-top: 230px;
 }
 main.indextwo .payment form{
   text-align: center;
@@ -180,7 +180,7 @@ main .section_title{
   font-size: 30px;
   line-height: 35px;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 220px;
 }
 main.indextwo .payment .left_block{
   width: 150%;
@@ -824,8 +824,7 @@ footer.successful_pay .footer_row{
 
 /* FAQ */
 main.faq{
-  min-height: calc(100vh - 75px);
-  padding: 120px 0 76px 0;
+  padding: 245px 0 76px 0;
 }
 main.faq .accordion{
   gap: 25px;
@@ -1033,9 +1032,6 @@ footer.agreement{
     max-width: none;
     width: 100%;
   }
-  main.successful_pay{
-    padding: 200px 0;
-  }
   main.indexthree .payment form label .checkmark::after{
     top: 6px;
     left: 5px;
@@ -1125,7 +1121,7 @@ footer.agreement{
     right: 159px;
   }
   main .section_title {
-    padding-top: 80px;
+    padding-top: 160px;
   }
   main .payment {
     padding: 30px 0 100px 0;
@@ -1161,7 +1157,7 @@ footer.agreement{
     justify-content: center;
   }
   main.faq{
-    padding: 60px 0 50px;
+    padding: 200px 0 50px;
   }
   main.faq .accordion .accordion-item .accordion-body{
     padding: 25px 25px 0 0;
@@ -1190,7 +1186,7 @@ footer.agreement{
   }
   main.indexthree .payment{
     flex-direction: column;
-    min-height: calc(100vh + 150px);
+    min-height: calc(100vh + 220px);
   }
   main.indexthree .payment .login_input {
     width: 60%;
@@ -1235,6 +1231,9 @@ footer.agreement{
   main.successful_pay .section_description{
     text-align: center;
   }
+  main.indextwo{
+    padding-top: 90px;
+  }
 }
 @media only screen and (max-width: 576px) {
   footer.successful_pay .footer_row{
@@ -1246,7 +1245,7 @@ footer.agreement{
     flex-direction: column;
   }
   main.faq{
-    padding: 45px 0 45px;
+    padding: 150px 0 45px;
   }
   main.policy{
     padding-bottom: 20px;
@@ -1291,7 +1290,7 @@ footer.agreement{
     padding: 0 0 80px 0;
   }
   main .section_title {
-    padding-top: 45px;
+    padding-top: 140px;
   }
   main .block_title{
     text-align: center;
@@ -1319,7 +1318,6 @@ footer.agreement{
   }
   header .header_row .header_logo img{
     width: 162px;
-    height: 29px;
   }
   header.successful_pay .header_row .header_logo img{
     width: 162px;
