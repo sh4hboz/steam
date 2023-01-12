@@ -23,9 +23,6 @@ body.successful_pay{
 body.faq{
   background-image: linear-gradient(180deg, #242038 11.62%, rgb(36 32 56 / 75%) 47.54%, #242038 70.48%),url(../images/main_bg_4.png);
 }
-body.indexthree.header_fixed{
-  padding: 65px 0 0 0;
-}
 .wraper {
   overflow: hidden;
 }
@@ -42,18 +39,25 @@ header{
   padding: 15px 0;
 }
 header.indexthree{
-  background: inherit;
-  box-shadow: inherit;
-  padding: 15px 0;
-  transition: .5s all ease;
-}
-header.indexthree.fixed{
+  padding: 25px 0;
+  width: 95%;
+  max-width: 1296px;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: fixed;
+  transition: .3s position ease-in, .3s max-width ease-in-out .1s, .3s top ease-in-out, .3s border-radius linear .3s;
   background: #332D4F;
   box-shadow: 0px 5px 25px rgba(13, 20, 29, 0.15);
-  position: fixed;
-  width: 100%;
-  top: 0;
+  border-radius: 100px;
   z-index: 10;
+}
+header.indexthree.fixed{
+  width: 100%;
+  max-width: 100%;
+  top: 0;
+  border-radius: 0;
 }
 
 header.successful_pay{
@@ -67,21 +71,7 @@ header.successful_pay .header_row{
   padding: 20px 0;
   justify-content: space-around;
 }
-header.indexthree .header_row{
-  background: #332D4F;
-  box-shadow: 0px 5px 25px rgba(13, 20, 29, 0.15);
-  border-radius: 100px;
-  padding: 20px 0;
-  justify-content: space-around;
-  transition: .5s all ease;
-}
-header.indexthree.fixed .header_row{
-  border-radius: 0;
-  box-shadow: none;
-  background: none;
-  padding: 0;
-  justify-content: space-between;
-}
+
 header .header_row {
   display: flex;
   flex-wrap: wrap;
@@ -164,7 +154,7 @@ header.successful_pay .header_row .statistics::before {
   top: 0;
 }
 main.policy{
-  padding: 100px 0 200px 0;
+  padding: 160px 0;
 }
 main.indextwo .section_title{
   display: none;
@@ -414,7 +404,7 @@ main .payment form button.disabled:hover .errors_block{
 }
 main .streamers{
   padding-bottom: 90px;
-  margin-top: -30px;
+  margin-top: -110px;
 }
 main .streamers .block_title{
   font-weight: 700;
@@ -459,7 +449,7 @@ main.indexthree .payment{
   text-align: center;
   gap: 0;
   justify-content: center;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh + 45px);
   align-items: center;
   padding: 0;
 }
@@ -907,12 +897,6 @@ main.policy .scroll-container-text .semibold{
 main.policy .scroll-container-text a{
   text-decoration: none;
 }
-header.agreement{
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10;
-}
 footer.agreement{
   position: fixed;
   width: 100%;
@@ -1055,6 +1039,9 @@ footer.agreement{
   main.indexthree .payment form label .checkmark::after{
     top: 6px;
     left: 5px;
+  }
+  footer .footer_row{
+    padding: 30px 0;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1203,7 +1190,7 @@ footer.agreement{
   }
   main.indexthree .payment{
     flex-direction: column;
-    min-height: calc(100vh - 110px);
+    min-height: calc(100vh + 150px);
   }
   main.indexthree .payment .login_input {
     width: 60%;
@@ -1312,6 +1299,9 @@ footer.agreement{
   main .sale{
     text-align: center;
   }
+  header.indexthree{
+    padding: 15px 0;
+  }
   header .header_row .statistics .statistic_number{
     font-size: 14px;
     line-height: 16px;
@@ -1326,6 +1316,10 @@ footer.agreement{
   }
   header .header_row .header_logo{
     gap: 5px;
+  }
+  header .header_row .header_logo img{
+    width: 162px;
+    height: 29px;
   }
   header.successful_pay .header_row .header_logo img{
     width: 162px;
