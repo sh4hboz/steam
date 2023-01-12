@@ -39,7 +39,7 @@ header{
   padding: 15px 0;
 }
 header.indexthree{
-  padding: 25px 0;
+  padding: 25px 15px;
   width: 95%;
   max-width: 1296px;
   top: 30px;
